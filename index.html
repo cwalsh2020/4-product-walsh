@@ -1,222 +1,360 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
     <head>
         <!-- character encoding -->
         <meta charset="UTF-8">
         <!-- title tag -->
-        <title>Product/Company Page Project</title>
+        <title>Perfecto's Caffe</title>
         <!-- mobile-friendly viewport -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- W3.CSS stylesheet -->
         <link rel="stylesheet" type="text/css" href="https://www.w3schools.com/w3css/4/w3.css">
         <!-- custom style -->
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- font awesome icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
-    <style>
-        body, html {height: 100%}
-        body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
-        .menu {display: none}
-        .bgimg {
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-image: url("/w3images/pizza.jpg");
-            min-height: 90%;
-        }
-    </style>
+
     <body>
 
-        <!-- Navbar (sit on top) -->
-        <div class="w3-top w3-hide-small">
-            <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
-                <a href="#" class="w3-bar-item w3-button">HOME</a>
-                <a href="#menu" class="w3-bar-item w3-button">MENU</a>
-                <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-                <a href="#googleMap" class="w3-bar-item w3-button">CONTACT</a>
+        <!-- top nav, desktop and tablet -->
+        <div class="w3-top">
+            <div class="w3-bar w3-theme">
+                <a href="#about" class="w3-bar-item w3-button">About</a>
+                <a href="#menu" class="w3-bar-item w3-button w3-hide-small">Menu</a>
+                <a href="#locations-and-hours" class="w3-bar-item w3-button w3-hide-small">Locations and Hours</a>
+                <a href="#catering" class="w3-bar-item w3-button w3-hide-small">Catering</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="topNav()">&#9776;</a>
+            </div>
+
+            <!-- top nav, mobile -->
+
+            <div id="mobileNav" class="w3-bar-block w3-theme-l1 w3-hide w3-hide-large w3-hide-medium" style="margin-top: 42px;">
+                <a href="#" class="w3-bar-item w3-button">About</a>
+                <a href="#" class="w3-bar-item w3-button">Menu</a>
+                <a href="#" class="w3-bar-item w3-button">Locations and Hours</a>
+                <a href="#" class="w3-bar-item w3-button">Catering</a>
+
             </div>
         </div>
 
-        <!-- Header with image -->
-        <header class="bgimg w3-display-container w3-grayscale-min" id="home">
-            <div class="w3-display-bottomleft w3-padding">
-                <span class="w3-tag w3-xlarge">Open from 10am to 12pm</span>
+        <!-- First Parallax Image with Logo Text -->
+        <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+            <div class="w3-display-middle" style="white-space:nowrap;">
+                <span class="w3-center w3-padding-large w3-theme w3-xlarge w3-wide w3-animate-opacity">Perfecto's Caffe</span>
             </div>
-            <div class="w3-display-middle w3-center">
-                <span class="w3-text-white w3-hide-small" style="font-size:100px">thin<br>CRUST PIZZA</span>
-                <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>thin<br>CRUST PIZZA</b></span>
-                <p><a href="#menu" class="w3-button w3-xxlarge w3-black">Let me see the menu</a></p>
+        </div>
+
+        <section id="about" class="w3-padding-64 w3-container">
+
+            <div class="w3-row">
+                <div class="title">
+                    <h1>About</h1>
+                </div>
             </div>
-        </header>
+
+            <div class="w3-row">
+                <div class="w3-half w3-padding">
+                    <div class="image-card">
+                        <img src="img/perfectos-andover.jpg" alt="Perfectos" style="width:100%">
+                        <div class="w3-container w3-center">
+                            <h3>Perfecto's Andover Caffe</h3> 
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w3-half">
+                    <div class="content-card">
+                        <div class="w3-center">
+
+                            <h3>History and Philosophy</h3>
+                            <p>It was January 1993, when the doors to the very first Perfecto’s Caffe were opened in Andover, Massachusetts. Two brothers, Andrea and Max Gabriello, finally see their dreams of opening a business together, come to fruition. 
+
+                                Their vision was to open a bakery/coffee shop that reflected what was most important to them, a great cup of coffee and breaking bread with the family. It was definitely a family operation as Andrea and Max brought their parents, sister, brother in law and other family members in to help run the business. </p>
+
+                            <p> All of the baked goods in Perfecto’s are hand made, including the New York style bagels, the flavored cream cheeses, the huge variety of gourmet muffins and the family’s biscotti. The coffee menu includes a variety of espresso specialty drinks and over 30 different coffees that can be bought whole bean or ground and approximately 8 different blends are freshly brewed each day. </p>
+
+                            <p> Pefecto’s Caffe customers are typically made up of commuters, local business workers, families and children, friends, joggers, students….. in short, everyone is a typical customer. It’s a great place to meet friends or business associates for breakfast or lunch. The atmosphere at Perfecto’s is inviting, efficient and unpretentious. Maintaining this welcoming feeling with the utmost of quality is the driving force behind the success of Perfecto’s Caffe. 
+                            </p>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Second Parallax Image with Logo Text -->
+        <section id=".coffevid" class=".coffeevid">
+            <!-- The video -->
+            <video autoplay muted loop id="myVideo">
+                <source src="img/Cup%20Of%20Coffee%20On%20Top%20Of%20Coffee%20Beans%20(3).mp4" type="video/mp4">
+            </video>
+
+        </section>
+
 
         <!-- Menu Container -->
-        <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+        <div class="w3-container w3-white w3-padding-64 w3-xxlarge" id="menu">
             <div class="w3-content">
 
-                <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">THE MENU</h1>
-                <div class="w3-row w3-center w3-border w3-border-dark-grey">
+                <h1 class="w3-center w3-jumbo w3-purple" style="margin-bottom:64px">Menu</h1>
+                <div class="w3-row w3-center w3-border w3-border-purple">
                     <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
-                        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Pizza</div>
+                        <div class="w3-col s4 tablink w3-padding-large w3-hover-purple">Beverages</div>
                     </a>
                     <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
-                        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Salads</div>
+                        <div class="w3-col s4 tablink w3-padding-large w3-hover-purple">Wraps</div>
                     </a>
                     <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
-                        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Starter</div>
+                        <div class="w3-col s4 tablink w3-padding-large w3-hover-purple">Salads</div>
                     </a>
                 </div>
 
+
                 <div id="Pizza" class="w3-container menu w3-padding-32 w3-white">
-                    <h1><b>Margherita</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$12.50</span></h1>
-                    <p class="w3-text-grey">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                    <h1><b>Latte</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.50</span></h1>
+                    <p class="w3-text-grey">Expresso and steamed milk</p>
                     <hr>
 
-                    <h1><b>Formaggio</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$15.50</span></h1>
-                    <p class="w3-text-grey">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+                    <h1><b>Cappuccino</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.50</span></h1>
+                    <p class="w3-text-grey">Expresso, steamed and foamed milk</p>
                     <hr>
 
-                    <h1><b>Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$17.00</span></h1>
-                    <p class="w3-text-grey">Fresh tomatoes, mozzarella, chicken, onions</p>
+                    <h1><b>Caffe Mocha</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$2.75</span></h1>
+                    <p class="w3-text-grey">Expresso, chocolate and steamed milk</p>
                     <hr>
 
-                    <h1><b>Pineapple'o'clock</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$16.50</span></h1>
-                    <p class="w3-text-grey">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+                    <h1><b>White Mocha</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.00</span></h1>
+                    <p class="w3-text-grey">White chocolate version of our caffe mocha</p>
                     <hr>
 
-                    <h1><b>Meat Town</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$20.00</span></h1>
-                    <p class="w3-text-grey">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+                    <h1><b>Caramel Latte</b> <span class="w3-tag w3-red w3-round">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round">$3.50</span></h1>
+                    <p class="w3-text-grey">Espresso, caramel and steamed milk</p>
                     <hr>
 
-                    <h1><b>Parma</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">$21.50</span></h1>
-                    <p class="w3-text-grey">Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
+                    <h1><b>Chai Latte</b> <span class="w3-tag w3-grey w3-round">New</span><span class="w3-right w3-tag w3-dark-grey w3-round">$3.25</span></h1>
+                    <p class="w3-text-grey">A blend of black tea, honey, spices and milk</p>
                 </div>
 
                 <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
-                    <h1><b>Lasagna</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$13.50</span></h1>
-                    <p class="w3-text-grey">Special sauce, mozzarella, parmesan, ground beef</p>
+                    <h1><b>Western Omelette</b> <span class="w3-tag w3-grey w3-round">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round">$4.00</span></h1>
+                    <p class="w3-text-grey">Egg with roasted red peppers, red onions & cheese</p>
                     <hr>
 
-                    <h1><b>Ravioli</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$14.50</span></h1>
-                    <p class="w3-text-grey">Ravioli filled with cheese</p>
+                    <h1><b>Eastern Omelette</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4.00</span></h1>
+                    <p class="w3-text-grey">Egg with roasted red peppers, red onions, bacon & cheese</p>
                     <hr>
 
-                    <h1><b>Spaghetti Classica</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$11.00</span></h1>
-                    <p class="w3-text-grey">Fresh tomatoes, onions, ground beef</p>
+                    <h1><b>Spinach, Feta & Cheddar</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.00</span></h1>
+                    <p class="w3-text-grey">Egg with spinach, feta, onions & cheddar cheese</p>
                     <hr>
 
-                    <h1><b>Seafood pasta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$25.50</span></h1>
-                    <p class="w3-text-grey">Salmon, shrimp, lobster, garlic</p>
+                    <h1><b>Farmer's Special</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
+                    <p class="w3-text-grey">Egg with sausage, bacon & cheese served on a French toast bagel with maple syrup</p>
                 </div>
 
 
                 <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
-                    <h1><b>Today's Soup</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">$5.50</span></h1>
-                    <p class="w3-text-grey">Ask the waiter</p>
+                    <h1><b>Tuna Waldorf</b> <span class="w3-tag w3-grey w3-round">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round">$5.00</span></h1>
+                    <p class="w3-text-grey">Baby greens, our own white tuna salad, raisins, feta cheese and ranch dressing</p>
                     <hr>
 
-                    <h1><b>Bruschetta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$8.50</span></h1>
-                    <p class="w3-text-grey">Bread with pesto, tomatoes, onion, garlic</p>
+                    <h1><b>Caesar</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$3.50</span></h1>
+                    <p class="w3-text-grey">Romaine lettuce, oven roasted croutons, shredded parmesan cheese and caesar dressing</p>
                     <hr>
 
-                    <h1><b>Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$9.50</span></h1>
-                    <p class="w3-text-grey">Grilled ciabatta, garlic butter, onions</p>
+                    <h1><b>Roma</b> <span class="w3-right w3-tag w3-dark-grey w3-round">4.00</span></h1>
+                    <p class="w3-text-grey">Baby greens, tomatoes, fresh mozzarella and roasted red peppers tossed with a balsamic vinaigrette and topped with pesto spread.</p>
                     <hr>
 
-                    <h1><b>Tomozzarella</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$10.50</span></h1>
-                    <p class="w3-text-grey">Tomatoes and mozzarella</p>
-                </div><br>
-
-            </div>
-        </div>
-
-        <!-- About Container -->
-        <div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
-            <div class="w3-content">
-                <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
-                <p>The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                <p><strong>The Chef?</strong> Mr. Italiano himself<img src="/w3images/chef.jpg" style="width:150px" class="w3-circle w3-right" alt="Chef"></p>
-                <p>We are proud of our interiors.</p>
-                <img src="/w3images/onepage_restaurant.jpg" style="width:100%" class="w3-margin-top w3-margin-bottom" alt="Restaurant">
-                <h1><b>Opening Hours</b></h1>
-
-                <div class="w3-row">
-                    <div class="w3-col s6">
-                        <p>Mon & Tue CLOSED</p>
-                        <p>Wednesday 10.00 - 24.00</p>
-                        <p>Thursday 10:00 - 24:00</p>
-                    </div>
-                    <div class="w3-col s6">
-                        <p>Friday 10:00 - 12:00</p>
-                        <p>Saturday 10:00 - 23:00</p>
-                        <p>Sunday Closed</p>
-                    </div>
+                    <h1><b>Mediterranean Garden Salad</b> <span class="w3-right w3-tag w3-dark-grey w3-round">$4.50</span></h1>
+                    <p class="w3-text-grey">Romaine lettuce, baby greens, tomatoes, onions and feta cheese tossed with a creamy greek dressing</p>
                 </div>
 
             </div>
         </div>
 
-        <!-- Contact (with google maps) -->
-        <div id="googleMap" class="w3-grayscale-max" style="width:100%;height:400px;"></div>
+        <!-- Third Parallax Image with Logo Text -->
+        <div class="bgimg-3 w3-display-container w3-opacity-min" id="home"> </div>
 
-        <div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge">
-            <div class="w3-content">
-                <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
-                <p>Find us at some address at some place or call us at 05050515-122330</p>
-                <p><span class="w3-tag">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
-                <p class="w3-xxlarge"><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
-                <form action="/action_page.php" target="_blank">
-                    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-                    <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
-                    <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
-                    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
-                    <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
-                </form>
+
+
+        <div class="w3-row w3-padding" id="locations-and-hours">
+            <div class="title">
+                <h1>Locations & Hours</h1>
             </div>
         </div>
 
-        <!-- Footer -->
-        <footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
-            <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-        </footer>
+        <div class="w3-row">
+            <div class="w3-quarter w3-padding">
+                <div class="w3-card-4">
+                    <img src="img/perfectos-north-andover.jpg" alt="North-Andover" style="width:100%">
+                    <div class="w3-container w3-center">
+                        <p>1115 Osgood Street, N Andover, MA</p>
 
-        <!-- Add Google Maps -->
-        <script>
-            function myMap()
-            {
-                myCenter=new google.maps.LatLng(41.878114, -87.629798);
-                var mapOptions= {
-                    center:myCenter,
-                    zoom:12, scrollwheel: false, draggable: false,
-                    mapTypeId:google.maps.MapTypeId.ROADMAP
-                };
-                var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
 
-                var marker = new google.maps.Marker({
-                    position: myCenter,
-                });
-                marker.setMap(map);
-            }
+                        <!-- Trigger/Open the Modal -->
+                        <button onclick="document.getElementById('id01').style.display='block'"
+                                class="w3-button">Hours</button>
 
-            // Tabbed Menu
-            function openMenu(evt, menuName) {
-                var i, x, tablinks;
-                x = document.getElementsByClassName("menu");
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                }
-                tablinks = document.getElementsByClassName("tablink");
-                for (i = 0; i < x.length; i++) {
-                    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
-                }
-                document.getElementById(menuName).style.display = "block";
-                evt.currentTarget.firstElementChild.className += " w3-red";
-            }
-            document.getElementById("myLink").click();
-        </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-        <!--
-To use this code on your website, get a free API key from Google.
-Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
--->
+                        <!-- The Modal -->
+                        <div id="id01" class="w3-modal">
+                            <div class="w3-modal-content">
+                                <div class="w3-container">
+                                    <span onclick="document.getElementById('id01').style.display='none'" 
+                                          class="w3-button w3-display-topright">&times;</span>
+                                    <p>Monday-Friday: 6AM-6PM</p>
+                                    <p>Saturday & Sunday: 7AM-4PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="w3-quarter w3-padding">
+                <div class="w3-card-4">
+                    <img src="img/perfectos-caffe-andover.jpg" alt="Andover" style="width:100%; height: 254px">
+                    <div class="w3-container w3-center">
+                        <p>79 N Main Street, Andover, MA</p>
+
+
+                        <!-- Trigger/Open the Modal -->
+                        <button onclick="document.getElementById('id02').style.display='block'"
+                                class="w3-button">Hours</button>
+
+                        <!-- The Modal -->
+                        <div id="id02" class="w3-modal">
+                            <div class="w3-modal-content">
+                                <div class="w3-container">
+                                    <span onclick="document.getElementById('id02').style.display='none'" 
+                                          class="w3-button w3-display-topright">&times;</span>
+                                    <p>Monday-Friday: 6AM-6PM</p>
+                                    <p>Saturday & Sunday: 6AM-4PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+
+            <div class="w3-quarter w3-padding">
+                <div class="w3-card-4">
+                    <img src="img/perfectos-tewksbury-5.png" alt="Tewksbury" style="width:100%">
+                    <div class="w3-container w3-center">
+                        <p>Oakdale Mall, Tewksbury, MA</p>
+
+
+                        <!-- Trigger/Open the Modal -->
+                        <button onclick="document.getElementById('id03').style.display='block'"
+                                class="w3-button">Hours</button>
+
+                        <!-- The Modal -->
+                        <div id="id03" class="w3-modal">
+                            <div class="w3-modal-content">
+                                <div class="w3-container">
+                                    <span onclick="document.getElementById('id03').style.display='none'" 
+                                          class="w3-button w3-display-topright">&times;</span>
+                                    <p>Monday-Friday: 6AM-7PM</p>
+                                    <p>Saturday & Sunday: 7AM-5PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="w3-quarter w3-padding">
+                <div class="w3-card-4">
+                    <img src="img/perfectos-peabody.png" alt="Peabody" style="width:100%">
+                    <div class="w3-container w3-center">
+                        <p>515 Lowell Street, Peabody, MA</p>
+
+
+                        <!-- Trigger/Open the Modal -->
+                        <button onclick="document.getElementById('id04').style.display='block'"
+                                class="w3-button">Hours</button>
+
+                        <!-- The Modal -->
+                        <div id="id04" class="w3-modal">
+                            <div class="w3-modal-content">
+                                <div class="w3-container">
+                                    <span onclick="document.getElementById('id04').style.display='none'" 
+                                          class="w3-button w3-display-topright">&times;</span>
+                                    <p>Monday-Friday: 6AM-6PM</p>
+                                    <p>Saturday & Sunday: 7AM-4PM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        
+                <!-- Third Parallax Image with Logo Text -->
+        <div class="bgimg-4 w3-display-container w3-opacity-min" id="home"> </div>
+
+        <form action="/action_page.php" class="w3-container w3-card-4 w3-light-grey w3-text-purple w3-margin">
+            <h2 class="w3-center w3-purple">Catering Form</h2>
+
+            <div class="w3-row w3-section" id="catering">
+                <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+                <div class="w3-rest">
+                    <input class="w3-input w3-border " name="first" type="text" placeholder="First Name">
+                </div>
+            </div>
+
+            <div class="w3-row w3-section">
+                <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
+                <div class="w3-rest">
+                    <input class="w3-input w3-border" name="last" type="text" placeholder="Last Name">
+                </div>
+            </div>
+
+            <div class="w3-row w3-section">
+                <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope-o"></i></div>
+                <div class="w3-rest">
+                    <input class="w3-input w3-border" name="email" type="text" placeholder="Email">
+                </div>
+            </div>
+
+            <div class="w3-row w3-section">
+                <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-phone"></i></div>
+                <div class="w3-rest">
+                    <input class="w3-input w3-border" name="phone" type="text" placeholder="Phone">
+                </div>
+            </div>
+
+            <div class="w3-row w3-section">
+                <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-pencil"></i></div>
+                <div class="w3-rest">
+                    <input class="w3-input w3-border" name="message" type="text" placeholder="Message">
+                </div>
+            </div>
+
+            <button class="w3-button w3-block w3-section w3-purple w3-ripple w3-padding">Send</button>
+
+        </form>
+
+        <!-- Javascript -->
+        <script src="js/topNav.js"></script>
+        <script src="js/video.js"></script>
+        <script src="js/tabs.js"></script>
+
+
 
     </body>
+
 </html>
